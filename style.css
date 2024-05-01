@@ -1,0 +1,84 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --darkGrey: hsl(0, 0%, 12%);
+    --offBlack: hsl(0, 0%, 8%);
+}
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family: "Inter", sans-serif;
+    background: var(--offBlack);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+p{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+/*DESIGN STARTS*/
+.myForm{
+    width: 385px;
+    padding: 40px;
+    background: var(--darkGrey);
+    border-radius: 10px;
+    text-align: center;
+}
+.myForm img{
+    width: 90px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+.myForm h2{
+    font-size: 24px;
+    color: var(--White);
+    font-weight: 600;
+}
+.myForm p:nth-child(3){
+    color: var(--Green);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.myForm p:nth-child(4){
+    color: var(--White);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.myForm input{
+    width: 100%;
+    padding:  14px;
+    text-align: center;
+    margin-bottom:15px;
+    border-radius: 10px;
+    border: none;
+    background: var(--Grey);
+    color: var(--White);
+    font-weight:900;
+}
+.myForm input:last-child{
+    margin-bottom: 0;
+}
+@media screen and (max-width:430px) {
+    .myForm{
+        margin: 85px auto;
+    }
+    
+}
